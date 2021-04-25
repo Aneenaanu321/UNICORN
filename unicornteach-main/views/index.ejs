@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnicornTeach</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/5587518f25.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- <link href="../public/css/main.css" rel="stylesheet" type="text/css"> -->
+
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <%- include("../public/images/logo.svg") %>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <%- include("../public/images/logo.svg") %> -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        </ul>
+    </div>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0 mr-2 custom-button customb1" type="submit">Log in</button>
+            <button class="btn my-2 my-sm-0 mr-2 custom-button customb2" type="submit">Sign up</button>
+        </form>
+    </nav>
+
+    
+    <div class="container hero-container" style="height: 100vh; margin-top: 50px;">
+        <div class="hero d-flex align-items-center">
+        <div class="row d-flex align-items-center no-gutters">
+            <div class="col-lg-6" >
+            <h1 class="hero-text" style="font-weight: bold; letter-spacing: -1.5px;">Making education accessible for everyone!</h1>
+            <p class="p-tag">We believe education is for everyone, wherever you are, and whatever your internet speed is. Create your own room to get started.</p>
+
+            <p>Still in alpha, but gonna get better in the coming days.</p>
+                <button class="create-room customb1 get-s" onclick="createRoom()">Create Room!</button>
+            </div>
+            <div class="col-lg-6 align-self-center ml-auto mx-auto">
+            <!-- <img src="./assets/images/smile.svg" alt="Placeholder-Image" style="background-position: center;display: block; margin: auto; overflow: hidden;">
+            -->
+            <!-- <img src="/images/oled.jpg" alt=""> -->
+            
+            <!-- <video src="/videos/lo.mp4"></video> -->
+
+            <!-- <img src="../public/images/oled.jpg" alt="" style="display: block;
+            height: 100px; width: auto; z-index: 1000000;"> -->
+
+            <video src="/videos/lo.mp4" class="video" autoplay="autoplay" loop style="overflow: hidden; margin: auto; object-fit:cover; max-width: 100%; height: auto;">
+            </video> 
+            </div>
+        </div>
+    </div>
+    </div>
+<section class="container">
+      <h2 class="my-title-custom">Our Team</h2>
+      
+  
+      <p style="text-align: center;">Sidharth Punathil //  Deo Saju</p>
+
+      <p style="text-align: center;">Sidharth Unnithan//</p>
+
+        
+        
+    
+</section>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 col-sm-4">
+        <ul class="list-unstyled">
+          <li class="links-last"><a href="#"><small>Topics</small></a></li>
+          <li class="links-last"><a href="#"><small>Partners</small></a></li>
+          <li class="links-last"><a href="#"><small>Get the App</small></a></li>
+          <li class="links-last"><a href="#"><small>About Us</small></a></li>
+        </ul>
+      </div>
+      <div class="col-4  col-sm-4">
+        <ul class="list-unstyled">
+          <li class="links-last"><a href="#"><small>Contact Us</small></a></li>
+          <li class="links-last"><a href="#"><small>Carrers</small></a></li>
+          <li class="links-last"><a href="#"><small>Affiliate</small></a></li>
+          <li class="links-last"><a href="#"><small>Help Desk</small></a></li>
+        </ul>
+      </div>
+      <div class="col-4  col-sm-4">
+        <ul class="list-unstyled">
+          <li class="links-last"><a href="#"><small>Terms and Conditions</small></a></li>
+          <li class="links-last"><a href="#"><small>Privacy and Policy</small></a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-4 smed align-self-center">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="row justify-content-center">             
+      <div class="col-auto">
+          <p class="ending-text">© 2021 | Unicorn Developers</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script>
+        function createRoom() {
+            const origin = window.location.origin
+            window.location = `${origin}/room`;
+            console.log(origin)
+        }
+    </script>
+    
+    <style>
+    
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --violet: #5E17EB;
+  --black: #0e0e0e;
+}
+
+.customb1 {
+    border: var(--violet);
+    color: #0e0e0e;
+    border: #0e0e0e;
+    border: 0.1px solid black;
+    border-radius: 0%;
+}
+
+.customb2 {
+    background-color: var(--violet);
+    border: var(--white);
+    color: #ffffff;
+    border-radius: 0%;
+}
+
+.customb2:hover {
+    opacity: 4.5;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+.customb1:hover {
+    opacity: 4.5;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+    
+.get-s {
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-container {
+    height: 100vh;
+    align-content: center;
+    margin-top: 10%;
+    border-bottom: 0.5px solid #000;;
+
+}
+
+.border {
+    border-bottom: 50px solid #000;;
+}
+.navbar {
+    
+    box-shadow: -1px 5px 14px 2px rgba(0,0,0,0.15);
+-webkit-box-shadow: -1px 5px 14px 2px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px 5px 14px 2px rgba(0,0,0,0.15);
+}
+
+.my-title-custom {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 5%;
+}
+
+.footer {
+    background-color: #0e0e0e;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.ending-text {
+    color: #ffffff;
+}
+
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#D1C4EA;
+}
+
+.search-icon {
+    position: relative;
+    left: -40px;
+}
+
+.custom-card {
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    background-color: #f1f1f1;
+    
+}
+
+.custom-card:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+    </style>
+</body>
+</html>
