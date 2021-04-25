@@ -119,13 +119,13 @@ localhost:3000
 
 <div align="center">
   
-![developers]
+![developers](https://github.com/Aneenaanu321/UNICORN/blob/main/unicornteach-main/Assets/UDEV.jpeg)
 
 </div>
 
 
 <div align="center">
-  <a href="https://github.com/ANEENA.E.A" >ANEENA</a>
+  <a href="https://github.com/ANEENA.E.A" >ANEENA.E.A</a>
   &nbsp;
   <a href="https://github.com/MARIA ROSE THAYIL" >MARIA ROSE THAYIL</a>
   &nbsp;
